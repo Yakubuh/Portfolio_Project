@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio Project</title>
+    <style>
+        /* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9c9696;
+    color: #333;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 70%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+
+}
+
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style the Features section */
+#features {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Style the About section */
+#about {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#about h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Style the Team section */
+#team {
+    padding: 20px;
+    background-color: white;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+.cover{
+    height: 50%;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img class="cover" src="./images/6383301.jpg" alt="Project Cover Image">
+        <h1>Your Portfolio Project</h1>
+        <p>A platform to showcase your talents to the world</p>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <a href="/Home.html" class="btn">Explore</a>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="feature">
+            <img src="./Screenshot 2023-08-30 211530.png" alt="Feature 1 Screenshot">
+            <h2>Feature 1: User-Friendly Interface</h2>
+            <p>Create your portfolio with ease using our intuitive interface. No coding required.</p>
+        </div>
+        <div class="feature">
+            <img src="./Screenshot 2023-08-30 211629.png" alt="Feature 2 Screenshot">
+            <h2>Feature 2: Project Showcase</h2>
+            <p>Showcase your projects with beautiful images and detailed descriptions.</p>
+        </div>
+        <div class="feature">
+            <img src="./Screenshot 2023-08-30 211530.png" alt="Feature 3 Screenshot">
+            <h2>Feature 3: Easy Sharing</h2>
+            <p>Share your portfolio with a unique URL and let others discover your work.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>This project was inspired by my passion for both software engineering and physics. It represents my journey of balancing these two diverse fields and exploring the synergy between science and technology.</p>
+        <p>As a Portfolio Project for Holberton School, this platform is designed to empower individuals to create impressive online portfolios and share their talents with the world.</p>
+        <p>Project Repository: <a href="https://github.com/Yakubuh/Portfolio_Project" target="_blank">GitHub Repo</a></p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-member">
+            <h3>BAYULU YAKUBU</h3>
+            <p><a href="https://www.linkedin.com/in/bayulu-yakubu-725279218/
+                " target="_blank">LinkedIn</a> | <a href="https://github.com/Yakubuh" target="_blank">GitHub</a> | <a href="https://twitter.com/BayuluY" target="_blank">Twitter</a></p>
+        </div>
+        <!-- Add more team members as needed -->
+    </section>
+
+    <script>
+
+// JavaScript functionality (if needed)
+
+// Example: Add smooth scrolling to navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
